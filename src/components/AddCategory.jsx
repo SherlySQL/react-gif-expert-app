@@ -1,4 +1,6 @@
 import { useState } from "react";
+import PropTypes from 'prop-types'; //Esto es para el Test
+
 
 
 export const AddCategory = ( { onNewCategory }) => { //Funcional Component
@@ -28,7 +30,7 @@ export const AddCategory = ( { onNewCategory }) => { //Funcional Component
       // <form onSubmit={ (event) => onSubmit(event) }> 
 
       //FORMA #2
-      <form onSubmit={  onSubmit }> 
+      <form onSubmit={  onSubmit } aria-label="form"> 
           <input 
               type="text"
               placeholder="Buscar gifs"
@@ -47,7 +49,10 @@ export const AddCategory = ( { onNewCategory }) => { //Funcional Component
 
 
 
-
+//PROPTYPES PARA TEST
+AddCategory.propTypes = {
+   onNewCategory: PropTypes.func.isRequired, //Este proptype recibe una función
+}
 
 
 
