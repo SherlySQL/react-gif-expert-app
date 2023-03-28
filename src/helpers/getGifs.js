@@ -13,3 +13,7 @@ export const getGifts = async( category ) =>{ //Función que nos trae el Api
     console.log (gifs);
     return gifs;
   }
+
+
+
+  
