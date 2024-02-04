@@ -26,7 +26,8 @@ const useFetchGifs = ( category ) => { //ESTE ES UN CUSTOM HOOKS, PUES NO RETORN
 
     return {
         images: imagesx,
-        isLoading //para verificar si es true o false que esta cargando imagenes
+        isLoading //para verificar si es true o false que esta cargando imagenes, asi a como esta es true
+        //isLoading: false //para verificar si es true o false que esta cargando imagenes
 
     }
 

@@ -34,11 +34,15 @@ describe('Pruebas en el Componente <AddCategory/>', () => {
         fireEvent.input(input, { target: { value: inputValue } }); //input recibe el valor que hay en el event (fireEvent)
         fireEvent.submit(form);
         
-        expect ( input.value ).toBe('') //Comparamos si el valor que tiene el input del evento == ""?
-        screen.debug(); 
+        expect ( input.value ).toBe('') //Comparamos si el valor que tiene el input del evento == ""? 
+        screen.debug();
         
      });
 
+
+    
+
+     
 });
 
 
